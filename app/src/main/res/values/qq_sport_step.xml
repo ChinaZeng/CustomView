@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QQSportStep">
+        <attr name="bottomColor" format="color" />
+        <attr name="topColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="maxStepNum" format="integer" />
+        <attr name="currentStepNum" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="circleRadio" format="dimension" />
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="arcAngle" format="float" />
+    </declare-styleable>
+
+</resources>
