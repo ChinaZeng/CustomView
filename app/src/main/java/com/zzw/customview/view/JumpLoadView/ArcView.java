@@ -75,7 +75,7 @@ public class ArcView extends View {
         if (specMode == MeasureSpec.EXACTLY) {
             result = specSize;
         } else {
-            result = 2 * mRadio;
+            result = 2 * mRadio / 3;
         }
         return result;
     }
@@ -90,13 +90,10 @@ public class ArcView extends View {
     protected void onDraw(Canvas canvas) {
         if (mRectF == null) {
             int left = getWidth() / 2 - mRadio;
-            int top = getHeight() / 2 - mRadio - mRadio / 3;
+            int top = -getHeight() / 2;
             int right = getWidth() / 2 + mRadio;
-            int bottom = getHeight() / 2 - mRadio + mRadio / 3;
+            int bottom = getHeight() / 2;
             mRectF = new RectF(left, top, right, bottom);
-            //设置缩放点
-            setPivotX(getWidth() / 2);
-            setPivotY(getHeight() / 2 - mRadio);
         }
         canvas.drawArc(mRectF, 0, 180, false, mArcPaint);
     }
