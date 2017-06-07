@@ -14,7 +14,7 @@ public class QQSportStepViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_qq_sport_stepview);
         qqSportStepView = (QQSportStepView) findViewById(R.id.stepView);
         int maxStepNun = 100000;
         qqSportStepView.setMaxStepNum(maxStepNun);

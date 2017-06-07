@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".QQSportStepViewActivity">
+        </activity>
+
+        <activity android:name=".JumpLoadViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
