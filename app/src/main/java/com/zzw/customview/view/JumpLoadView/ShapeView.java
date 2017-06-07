@@ -110,7 +110,7 @@ public class ShapeView extends View {
         mArcPaint = new Paint();
         mArcPaint.setAntiAlias(true);
         mArcPaint.setColor(Color.GRAY);
-        
+
     }
 
 
@@ -119,14 +119,21 @@ public class ShapeView extends View {
         super.onDraw(canvas);
         initCenterPoint();
 
-        drawArc(canvas);
-
         if (mFlog == 0)
             drawCircle(canvas);
         else if (mFlog == 1)
             drawRect(canvas);
         else
             drawTriangle(canvas);
+    }
+
+    private void initCenterPoint() {
+        if (mCenterX == -1 || mCenterY == -1) {
+            mCenterX = getMeasuredWidth() / 2;
+            mCenterY = getMeasuredHeight() / 2;
+//            setPivotX(mCenterX);
+//            setPivotY(mCenterY);
+        }
     }
 
     /**
@@ -138,20 +145,7 @@ public class ShapeView extends View {
         canvas.drawCircle(mCenterX, mCenterY, mRadio, mCirclePaint);
     }
 
-    private void initCenterPoint() {
-        if (mCenterX == -1 || mCenterY == -1) {
-            mCenterX = getMeasuredWidth() / 2;
-            mCenterY = getMeasuredHeight() / 2;
-            setPivotX(mCenterX);
-            setPivotY(mCenterY);
-        }
-    }
 
-
-    private void drawArc(Canvas canvas) {
-        RectF rectF = new RectF(mCenterX - mRadio, (int) (mCenterY + 1.5 * mRadio), mCenterX + mRadio, mCenterY + 2 * mRadio);
-        canvas.drawArc(rectF, 0, 180, false, mArcPaint);
-    }
 
 
     /**
