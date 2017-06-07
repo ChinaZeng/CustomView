@@ -69,17 +69,7 @@ public class JumpLoadView extends LinearLayout {
         startAnim();
     }
 
-    @Override
-    protected void onAttachedToWindow() {
-        mActivity.getApplication().registerActivityLifecycleCallbacks(animLifecyleCallback);
-        super.onAttachedToWindow();
-    }
 
-    @Override
-    protected void onDetachedFromWindow() {
-        mActivity.getApplication().unregisterActivityLifecycleCallbacks(animLifecyleCallback);
-        super.onDetachedFromWindow();
-    }
 
     public void startAnim() {
         if (mAnimatorSet == null) {
@@ -148,6 +138,19 @@ public class JumpLoadView extends LinearLayout {
         mArcView.setRadio(radio);
     }
 
+
+
+    @Override
+    protected void onAttachedToWindow() {
+        mActivity.getApplication().registerActivityLifecycleCallbacks(animLifecyleCallback);
+        super.onAttachedToWindow();
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        mActivity.getApplication().unregisterActivityLifecycleCallbacks(animLifecyleCallback);
+        super.onDetachedFromWindow();
+    }
 
     private SimpleActivityLifecycleCallbacks animLifecyleCallback = new SimpleActivityLifecycleCallbacks() {
         @Override
