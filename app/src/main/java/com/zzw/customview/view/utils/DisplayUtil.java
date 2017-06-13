@@ -32,10 +32,11 @@ public class DisplayUtil {
      * @param paint
      * @return
      */
-    public static int getTextWidth(String str, Paint paint) {
-        Rect textBounds = new Rect();
-        paint.getTextBounds(str, 0, str.length(), textBounds);
-        return textBounds.width();
+    public static float getTextWidth(String str, Paint paint) {
+//        Rect textBounds = new Rect();
+//        paint.getTextBounds(str, 0, str.length(), textBounds);
+//        return textBounds.width();
+        return paint.measureText(str);
     }
 
     /**

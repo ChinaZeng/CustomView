@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzw.customview.AlphabeticalIndexViewActivity">
+
+    <com.zzw.customview.view.AlphabeticalIndexView
+        android:layout_width="wrap_content"
+        android:id="@+id/alv"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:padding="10dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv"
+        android:text="1"
+        android:background="@drawable/bg_alphabetical"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center" />
+
+</FrameLayout>

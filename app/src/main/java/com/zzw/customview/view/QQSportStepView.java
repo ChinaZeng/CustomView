@@ -133,7 +133,7 @@ public class QQSportStepView extends View {
         //3.画文字
         String step = String.valueOf(mCurrentStepNum);
         if (mTextX == -1) {
-            mTextX = (getWidth() - DisplayUtil.getTextWidth(step, mTextPaint)) / 2;
+            mTextX = (int) ((getWidth() - DisplayUtil.getTextWidth(step, mTextPaint)) / 2);
         }
         // 计算文字的基线
         if (mTextY == -1) {
