@@ -13,3 +13,7 @@
 [字母索引](http://www.jianshu.com/p/5ea757b380db)
 
 ![字母索引](http://upload-images.jianshu.io/upload_images/4658633-a66ad0b9d75308ac.gif?imageMogr2/auto-orient/strip)
+
+[字体变色](http://www.jianshu.com/p/316adacdf091)
+
+![字体变色](http://upload-images.jianshu.io/upload_images/4658633-e84cba1783071f90.gif?imageMogr2/auto-orient/strip)
