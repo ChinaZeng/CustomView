@@ -75,7 +75,8 @@ public class AlphabeticalIndexView extends ListView {
             // 获取内容的宽度
             int contentWidth = getWidth() - getPaddingLeft() - getPaddingRight();
 
-            canvas.drawText(letter, getPaddingLeft() + (contentWidth - measureTextWidth) / 2, getPaddingTop() + mSingLetterHeight / 2 + mSingLetterHeight * i + DisplayUtil.getTextBaseLine(mPaint), mPaint);
+            canvas.drawText(letter, getPaddingLeft() + (contentWidth - measureTextWidth) / 2, getPaddingTop() +  mSingLetterHeight * i + DisplayUtil.getTextBaseLine((int) mSingLetterHeight, mPaint), mPaint)
+            ;
         }
     }
 

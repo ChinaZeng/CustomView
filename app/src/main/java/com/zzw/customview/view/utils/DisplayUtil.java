@@ -42,14 +42,15 @@ public class DisplayUtil {
     /**
      * 获取文字基线
      *
-     * @param paint
+     * @param height 当前控件高度
+     * @param paint  画笔
      * @return
      */
-    public static int getTextBaseLine(Paint paint) {
+    public static int getTextBaseLine(int height, Paint paint) {
         // 获取画笔的FontMetrics
         Paint.FontMetrics fontMetrics = paint.getFontMetrics();
         // 计算文字的基线
-        return (int) ((fontMetrics.bottom - fontMetrics.top) / 2 - fontMetrics.bottom);
+        return (int) (height / 2 + (fontMetrics.bottom - fontMetrics.top) / 2 - fontMetrics.bottom);
     }
 
     /**

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzw.customview.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.zzw.customview.MainActivity">
+
+
+        <Button
+            android:id="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="qq记步" />
+
+        <Button
+            android:id="@+id/load58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="58加载" />
+
+        <Button
+            android:id="@+id/suoyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="字母索引" />
+
+
+        <Button
+            android:id="@+id/ziticolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="字体变色" />
+
+        <Button
+            android:id="@+id/colortv_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="字体变色和ViewPager配合使用" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+

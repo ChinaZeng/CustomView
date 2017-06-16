@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QQSportStepViewActivity">
+        <activity android:name=".QQSportStepViewActivity" />
+        <activity android:name=".JumpLoadViewActivity" />
+        <activity android:name=".AlphabeticalIndexViewActivity" />
+        <activity android:name=".ColorTrackTextViewActivity" />
+        <activity android:name=".ViewPagerActivity" />
 
-        </activity>
-        <activity android:name=".JumpLoadViewActivity">
-
-        </activity>
-        <activity android:name=".AlphabeticalIndexViewActivity">
-
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".TestActivity">
+
 
         </activity>
     </application>

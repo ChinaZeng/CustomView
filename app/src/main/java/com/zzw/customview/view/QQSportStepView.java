@@ -137,7 +137,7 @@ public class QQSportStepView extends View {
         }
         // 计算文字的基线
         if (mTextY == -1) {
-            mTextY = getHeight() / 2 + DisplayUtil.getTextBaseLine(mTextPaint);
+            mTextY =  DisplayUtil.getTextBaseLine(getHeight(),mTextPaint);
         }
         // 绘制步数文字
         canvas.drawText(step, mTextX, mTextY, mTextPaint);
