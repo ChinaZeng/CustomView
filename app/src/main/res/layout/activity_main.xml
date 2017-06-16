@@ -49,6 +49,14 @@
             android:layout_height="wrap_content"
             android:text="字体变色和ViewPager配合使用" />
 
+
+        <Button
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ratingBar评分" />
+
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

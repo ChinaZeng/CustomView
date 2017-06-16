@@ -17,3 +17,7 @@
 [字体变色](http://www.jianshu.com/p/316adacdf091)
 
 ![字体变色](http://upload-images.jianshu.io/upload_images/4658633-e84cba1783071f90.gif?imageMogr2/auto-orient/strip)
+
+[评分控件RatingBar](http://www.jianshu.com/p/1d4adac7a169)
+
+![评分控件RatingBar](http://upload-images.jianshu.io/upload_images/4658633-eb95f74dd941b0f1.gif?imageMogr2/auto-orient/strip)

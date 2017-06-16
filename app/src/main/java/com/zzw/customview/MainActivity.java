@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.suoyin).setOnClickListener(this);
         findViewById(R.id.ziticolor).setOnClickListener(this);
         findViewById(R.id.colortv_vp).setOnClickListener(this);
+        findViewById(R.id.rating).setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +43,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.colortv_vp:
                 startActivity(ViewPagerActivity.class);
+                break;
+
+            case R.id.rating:
+                startActivity(RatingBarActivity.class);
                 break;
         }
     }

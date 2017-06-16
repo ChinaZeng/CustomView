@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--未选中引用-->
+        <attr name="starNormal" format="reference" />
+        <!--选中引用-->
+        <attr name="starFocus" format="reference" />
+        <!--最大的分数-->
+        <attr name="gradeNumber" format="integer" />
+        <!--当前的分数-->
+        <attr name="currentGrade" format="integer" />
+        <!--星星之间的间距-->
+        <attr name="statPadding" format="dimension" />
+    </declare-styleable>
+</resources>
