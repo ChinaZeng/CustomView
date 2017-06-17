@@ -57,6 +57,13 @@
             android:text="ratingBar评分" />
 
 
+        <Button
+            android:id="@+id/tagLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标签 流式布局" />
+
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

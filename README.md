@@ -21,3 +21,7 @@
 [评分控件RatingBar](http://www.jianshu.com/p/1d4adac7a169)
 
 ![评分控件RatingBar](http://upload-images.jianshu.io/upload_images/4658633-eb95f74dd941b0f1.gif?imageMogr2/auto-orient/strip)
+
+[流式布局](http://www.jianshu.com/p/5e8eaa379fc1)
+
+![流式布局](http://upload-images.jianshu.io/upload_images/4658633-f7a783b28bb5db3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

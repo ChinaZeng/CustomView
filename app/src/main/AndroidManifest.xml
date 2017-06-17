@@ -15,14 +15,15 @@
         <activity android:name=".ColorTrackTextViewActivity" />
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".RatingBarActivity" />
+        <activity android:name=".TagLayoutActivity" />
 
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity android:name=".TestActivity">

@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.ziticolor).setOnClickListener(this);
         findViewById(R.id.colortv_vp).setOnClickListener(this);
         findViewById(R.id.rating).setOnClickListener(this);
+        findViewById(R.id.tagLayout).setOnClickListener(this);
+
     }
 
     @Override
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.rating:
                 startActivity(RatingBarActivity.class);
+                break;
+
+            case R.id.tagLayout:
+                startActivity(TagLayoutActivity.class);
                 break;
         }
     }
