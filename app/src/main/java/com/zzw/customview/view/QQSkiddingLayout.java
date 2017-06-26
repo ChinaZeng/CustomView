@@ -2,6 +2,8 @@ package com.zzw.customview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -9,6 +11,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 
 import com.zzw.customview.R;
@@ -25,7 +28,7 @@ public class QQSkiddingLayout extends HorizontalScrollView {
     // 菜单的宽度
     private int mMenuWidth;
 
-    private View mMenuView, mContentView;
+    private View mMenuView, mForegroundView, mContentView;
 
     //处理快速滑动
     private GestureDetector mGestureDetector;
@@ -76,17 +79,30 @@ public class QQSkiddingLayout extends HorizontalScrollView {
             throw new RuntimeException("只能放置两个子View");
         //菜单
         mMenuView = container.getChildAt(0);
-        ViewGroup.LayoutParams meauParams = mMenuView.getLayoutParams();
-        meauParams.width = mMenuWidth;
+        ViewGroup.LayoutParams menuParams = mMenuView.getLayoutParams();
+        menuParams.width = mMenuWidth;
         //7.0一下的不加这句代码是正常的   7.0以上的必须加
-        mMenuView.setLayoutParams(meauParams);
+        mMenuView.setLayoutParams(menuParams);
 
         //内容页
         mContentView = container.getChildAt(1);
+
         ViewGroup.LayoutParams contentParams = mContentView.getLayoutParams();
         contentParams.width = DisplayUtil.getScreenWidth(getContext());
+        //移除他 然后添加一个FrameLayout
+        container.removeView(mContentView);
+        FrameLayout frameLayout = new FrameLayout(getContext());
+        mForegroundView = new View(getContext());
+        mForegroundView.setBackgroundColor(Color.parseColor("#55000000"));
+
         //7.0一下的不加这句代码是正常的   7.0以上的必须加
+        frameLayout.setLayoutParams(contentParams);
         mContentView.setLayoutParams(contentParams);
+        mForegroundView.setLayoutParams(contentParams);
+        frameLayout.addView(mContentView);
+        frameLayout.addView(mForegroundView);
+
+        container.addView(frameLayout);
 
         //进入是关闭状态  在这里调用没用  在onLayout之后调用
         // scrollTo(mMenuWidth, 0);
@@ -98,6 +114,7 @@ public class QQSkiddingLayout extends HorizontalScrollView {
         super.onLayout(changed, l, t, r, b);
         //进入是关闭状态
         scrollTo(mMenuWidth, 0);
+        mForegroundView.setAlpha(0.0f);//默认透明
     }
 
 
@@ -141,9 +158,12 @@ public class QQSkiddingLayout extends HorizontalScrollView {
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
 
+        //主要看l  手指从左往右滑动 由大变小
+        //计算一个梯度值 1->0
+        float scale = 1.0f * l / mMenuWidth;
+        mForegroundView.setAlpha(1.0f - scale);
         //退出按钮在右边
         ViewCompat.setTranslationX(mMenuView, 0.7f * l);
-
 
     }
 

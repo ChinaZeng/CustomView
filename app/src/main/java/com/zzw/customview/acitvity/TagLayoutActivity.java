@@ -1,15 +1,13 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.zzw.customview.R;
 import com.zzw.customview.view.tagLayout.BaseAdapter;
 import com.zzw.customview.view.tagLayout.TagLayout;
 

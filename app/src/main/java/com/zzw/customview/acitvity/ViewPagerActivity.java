@@ -1,4 +1,4 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.zzw.customview.R;
 import com.zzw.customview.view.ColorTrackTextView;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.zzw.customview.R;
 
 /**
  * Created by zzw on 2017/6/15.

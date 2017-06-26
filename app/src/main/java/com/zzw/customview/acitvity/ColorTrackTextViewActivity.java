@@ -1,4 +1,4 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.zzw.customview.R;
 import com.zzw.customview.view.ColorTrackTextView;
 
 /**

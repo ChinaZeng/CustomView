@@ -1,8 +1,9 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.zzw.customview.R;
 import com.zzw.customview.view.JumpLoadView.JumpLoadView;
 
 public class JumpLoadViewActivity extends AppCompatActivity {

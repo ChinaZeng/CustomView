@@ -1,14 +1,7 @@
-package com.zzw.customview
+package com.zzw.customview.acitvity
 
-import android.content.Intent
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.text.method.Touch
-import android.view.View
-
-
+import com.zzw.customview.R
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 /**
  * Created by zzw on 2017/6/15.
@@ -16,12 +9,11 @@ import kotlinx.android.synthetic.main.activity_main.*
  * Des:
  */
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : android.support.v7.app.AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: android.os.Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         qq.startActivity(QQSportStepViewActivity::class.java)
         load58.startActivity(JumpLoadViewActivity::class.java)
         suoyin.startActivity(AlphabeticalIndexViewActivity::class.java)
@@ -29,16 +21,18 @@ class MainActivity : AppCompatActivity() {
         colortv_vp.startActivity(ViewPagerActivity::class.java)
         rating.startActivity(RatingBarActivity::class.java)
         tagLayout.startActivity(TagLayoutActivity::class.java)
-        touch.startActivity(TouchActivity::class.java)
         skidding.startActivity(SkiddingActivity::class.java)
-        radar.startActivity(RadarViewActivity::class.java)
         qqSkidding.startActivity(QQSliddingActivity::class.java)
+        erticalDragListView.startActivity(VerticalDragListViewActivity::class.java)
+
+        radar.startActivity(RadarViewActivity::class.java)
+        touch.startActivity(TouchActivity::class.java)
     }
 
 
-    fun View.startActivity(clazz: Class<*>) {
+    fun android.view.View.startActivity(clazz: Class<*>) {
         setOnClickListener {
-            val intent = Intent(context, clazz)
+            val intent = android.content.Intent(context, clazz)
             startActivity(intent)
         }
     }

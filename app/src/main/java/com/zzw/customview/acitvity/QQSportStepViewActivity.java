@@ -1,10 +1,11 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.animation.ValueAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.DecelerateInterpolator;
 
+import com.zzw.customview.R;
 import com.zzw.customview.view.QQSportStepView;
 
 public class QQSportStepViewActivity extends AppCompatActivity {

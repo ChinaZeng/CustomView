@@ -25,3 +25,11 @@
 [流式布局](http://www.jianshu.com/p/5e8eaa379fc1)
 
 ![流式布局](http://upload-images.jianshu.io/upload_images/4658633-f7a783b28bb5db3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+[酷狗侧滑菜单](http://www.jianshu.com/p/b5fa89a93328)
+
+![酷狗侧滑菜单](http://upload-images.jianshu.io/upload_images/4658633-558bd5c0a1eaf3ac.gif?imageMogr2/auto-orient/strip)
+
+[汽车之家折叠列表](http://www.jianshu.com/p/c56d57fd915d)
+
+![汽车之家折叠列表](http://upload-images.jianshu.io/upload_images/4658633-dfdb8438e0fdc092.gif?imageMogr2/auto-orient/strip)

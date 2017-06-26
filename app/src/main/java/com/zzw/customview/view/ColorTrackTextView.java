@@ -7,8 +7,10 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.ViewDragHelper;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+import android.view.View;
 
 import com.zzw.customview.R;
 import com.zzw.customview.view.utils.DisplayUtil;
@@ -48,7 +50,6 @@ public class ColorTrackTextView extends AppCompatTextView {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
-
 
 
     private void init(Context context, AttributeSet attrs) {
@@ -144,5 +145,8 @@ public class ColorTrackTextView extends AppCompatTextView {
     public void setChangeColor(int changeColor) {
         this.mChangeColor = changeColor;
     }
+
+
+
 }
 

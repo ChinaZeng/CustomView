@@ -9,29 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QQSportStepViewActivity" />
-        <activity android:name=".JumpLoadViewActivity" />
-        <activity android:name=".AlphabeticalIndexViewActivity" />
-        <activity android:name=".ColorTrackTextViewActivity" />
-        <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".RatingBarActivity" />
-        <activity android:name=".TagLayoutActivity" />
+        <activity android:name=".acitvity.QQSportStepViewActivity" />
+        <activity android:name=".acitvity.JumpLoadViewActivity" />
+        <activity android:name=".acitvity.AlphabeticalIndexViewActivity" />
+        <activity android:name=".acitvity.ColorTrackTextViewActivity" />
+        <activity android:name=".acitvity.ViewPagerActivity" />
+        <activity android:name=".acitvity.RatingBarActivity" />
+        <activity android:name=".acitvity.TagLayoutActivity" />
         <activity
-            android:name=".SkiddingActivity"
+            android:name=".acitvity.SkiddingActivity"
             android:theme="@style/TranslucentStatusTheme" />
-        <activity android:name=".TouchActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".acitvity.TouchActivity" />
+        <activity android:name=".acitvity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestActivity" />
-        <activity android:name=".RadarViewActivity" />
+        <activity android:name=".acitvity.TestActivity" />
+        <activity android:name=".acitvity.RadarViewActivity" />
         <activity
-            android:name=".QQSliddingActivity"
+            android:name=".acitvity.QQSliddingActivity"
             android:theme="@style/TranslucentStatusTheme" />
+        <activity android:name=".acitvity.VerticalDragListViewActivity" />
     </application>
 
 </manifest>

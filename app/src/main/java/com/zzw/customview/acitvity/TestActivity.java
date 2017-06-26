@@ -1,4 +1,4 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import com.zzw.customview.R;
 
 public class TestActivity extends AppCompatActivity {
 

@@ -1,8 +1,10 @@
-package com.zzw.customview;
+package com.zzw.customview.acitvity;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.zzw.customview.R;
 
 /**
  * Created by zzw on 2017/6/20.
