@@ -63,6 +63,32 @@
             android:layout_height="wrap_content"
             android:text="标签 流式布局" />
 
+        <Button
+            android:id="@+id/skidding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="酷狗侧滑菜单" />
+
+        <Button
+            android:id="@+id/qqSkidding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="qq6.0侧滑" />
+
+
+        <Button
+            android:id="@+id/radar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="雷达" />
+
+
+        <Button
+            android:id="@+id/touch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="事件分发测试" />
+
 
     </LinearLayout>
 

@@ -16,20 +16,22 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".RatingBarActivity" />
         <activity android:name=".TagLayoutActivity" />
-
+        <activity
+            android:name=".SkiddingActivity"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity android:name=".TouchActivity" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TestActivity">
-
-
-        </activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".RadarViewActivity" />
+        <activity
+            android:name=".QQSliddingActivity"
+            android:theme="@style/TranslucentStatusTheme" />
     </application>
 
 </manifest>

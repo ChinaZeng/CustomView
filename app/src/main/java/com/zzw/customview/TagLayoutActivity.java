@@ -57,7 +57,5 @@ public class TagLayoutActivity extends AppCompatActivity {
                 return tagTv;
             }
         });
-
-
     }
 }

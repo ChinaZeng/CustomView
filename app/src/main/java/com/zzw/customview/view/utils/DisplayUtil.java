@@ -3,6 +3,8 @@ package com.zzw.customview.view.utils;
 import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 
 /**
  * Created by zzw on 2017/6/6.
@@ -117,4 +119,20 @@ public class DisplayUtil {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
     }
+
+
+    /**
+     * 获得屏幕高度
+     *
+     * @param context
+     * @return
+     */
+    public static int getScreenWidth(Context context) {
+        WindowManager wm = (WindowManager) context
+                .getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(outMetrics);
+        return outMetrics.widthPixels;
+    }
+
 }

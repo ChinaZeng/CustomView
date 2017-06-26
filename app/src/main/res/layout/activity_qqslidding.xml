@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zzw.customview.view.QQSkiddingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_sliding_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_menu_bg"
+    android:orientation="vertical"
+    app:menuRightMargin="62dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_home_menu" />
+
+        <include layout="@layout/layout_home_content" />
+    </LinearLayout>
+
+</com.zzw.customview.view.QQSkiddingLayout>
