@@ -5,8 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Email 240336124@qq.com
- * Created by Darren on 2017/6/11.
+ * Created by zzw on 2017/6/11.
  * Version 1.0
  * Description: 流式布局的Adapter
  */
